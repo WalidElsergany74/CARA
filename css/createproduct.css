@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+a {
+  font-size: 18px;
+  color: #1a1a1a;
+  list-style: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-weight: bold;
+}
+li {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: 0.3s ease;
+  list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+.create-products-page {
+    
+}
+.create-products-page form{
+
+}
+
+.create-products-page form input,
+.create-products-page form select
+{
+width: 100%;
+height: 60px;
+padding: 10px;
+border: 1px solid #e2e2e2;
+border-radius: 10px;
+font-size: 20px;
+margin: 10px 0;
+display: block;
+}
+.create-products-page form input:focus{
+    outline: none;
+}
+.create-products-page form #Create,
+.create-products-page form #Update
+
+{
+width: 100%;
+height: 60px;
+padding: 10px;
+color: #fff;
+background-color:#088178;
+border: 0;
+font-weight: 600;
+cursor: pointer;
+border-radius: 19px;
+}
+.create-products-page form #Create:hover{
+background-color: #0b6e68;
+}

@@ -1,0 +1,155 @@
+/* start profile page  */
+.profile-page .review  .avatar-box{
+    border-right: 1px solid #eee;
+    width: 300px;
+  }
+  @media (max-width:767px){
+    .profile-page .review  .avatar-box{
+      border-right: none;
+    }
+  }
+  @media (max-width:767px){
+    .profile-page .review{
+      flex-direction: column;
+      /* width: 100%; */
+    }
+  }
+ 
+  .review {
+    background-color: #f6f6f6f0;
+    border-radius: 20px;
+  }
+  .profile-page .avatar-box > img{
+  width: 120px;
+  height: 120px;
+  }
+  .profile-page .avatar-box .level{
+  background-color: #eee;
+  height: 7px;
+  width: 70%;
+  margin: auto;
+  border-radius: 6px;
+  position: relative;
+  }
+  .profile-page .avatar-box .level span{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: royalblue;
+  border-radius: 6px;
+  }
+  .profile-page .toggle-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    }
+    .profile-page .toggle-switch{
+      background-color: #ccc;
+      position: relative;
+      width: 78px;
+      height: 20px;
+      border-radius: 16px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    .profile-page .toggle-switch::before{
+      font-family: "Font Awesome 6 Free";
+    content: "\f00d";
+    font-weight: 900;
+    background-color: white;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position:absolute;
+    top: 4px;
+    left: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    transition: 0.3s;
+    font-size: 8px;
+    }
+    .toggle-checkbox:checked + .toggle-switch{
+    background-color: royalblue;
+    }
+   .profile-page .toggle-checkbox:checked + .toggle-switch::before{
+    left: 62px;
+    color: royalblue;
+    content: "\f00c";
+    font-weight: 900;
+    }
+    .info-box {
+        width: 100%;
+    }
+    .profile-page .info-box .box{
+  flex-wrap: wrap;
+  border-bottom: 1px solid #eee;
+  transition: 0.3s;
+    }
+    .profile-page .info-box .box:hover{
+  background-color: #f6f6f6;
+  
+    }
+    .profile-page .info-box .box > div{
+      min-width: 250px;
+      padding: 10px 0 0 ;
+    }
+    .profile-page .info-box .box h4{
+  font-weight: normal;
+    }
+  @media (max-width:767px){
+    .profile-page .other-data{
+      flex-direction: column;
+    }
+  }
+  .profile-page .skills-card{
+    flex-grow: 1;
+  }
+  .profile-page .skills-card ul li{
+    padding: 15px 0;
+  }
+  .profile-page .skills-card ul li:not(:last-child){
+  border-bottom: 1px solid #eee;
+  }
+  .profile-page .skills-card ul li  span{
+    display: inline-block;
+    padding: 4px 10px ;
+    background-color: #eee;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+  .profile-page .skills-card ul li  span:not(:last-child){
+    margin-right: 5px;
+  }
+  .profile-page .activities{
+    flex-grow: 2;
+  }
+  .profile-page .activities img{
+    width: 70px;
+  margin-right: 10px;
+  }
+  .profile-page .activity:not(:last-of-type){
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  @media (min-width:768px){
+    .profile-page .activity .date {
+    margin-left: auto;
+    text-align: right;
+    }
+  }
+  .rating i {
+    color:rgb(243, 181, 25);;
+  }
+  /* end profile page  */
+  #imageprof {
+    width: 220px;
+    height: 220px;
+    
+    border-radius: 50%;
+  }
+
+
+

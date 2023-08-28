@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="css/createproduct.css">
+    <title>My Products</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" id="header" >
+    <div class="container">
+      <a href="index.html"> <img src="./img/logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto ms-auto mt-2 mb-2 mb-lg-0" id="">
+          <li class="nav-item">
+            <a class="nav-link active " aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="shop.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="abut.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contacts</a>
+          </li>
+          <!-- <li class="nav-item d-flex justify-content-center align-items-center border-1 ">
+            <button href="#" class="cart nav-link me-3">
+              <i id="shop-items" class="fa-solid fa-cart-shopping d-flex align-items-center"></i>
+          </button>
+            <span id="counter" class="counter fw-bold" >0</span>
+          </li> -->
+
+
+          <ul  class="d-flex sign links " id="links">
+         <li><a href="signin.html" class="">sign In</a></li>
+         <li><a href="signup.html" class="">sign Up</a></li>
+          </ul>
+
+          
+          <ul class=" align-items-center justify-content-between m" id="user-info">
+           
+            <div class="d-flex align-items-center justify-content-center  " id="avatar-head">
+              <img src="img/avatar-05.png" alt="" id="image-head">
+              <li  style="list-style: none;"><a class="me-5 ms-1" style="font-size: 16px; color: #1a1a1a; font-weight: bold; text-transform: uppercase; " href="profile.html" id="user"></a></li>
+              <li  style="list-style: none; " ><a class=" me-5" style=" font-size: 16px; color: #1a1a1a; font-weight: bold; text-transform: uppercase;   " href="myproducts.html" id="myproheader">MyProducts</a></li>
+             </div>
+
+
+           <div class="d-flex justify-content-center align-items-center list-pr">
+            <li  style="list-style: none;"><a class="me-5 logout" style="font-size: 16px; color: #1a1a1a; font-weight: bold; text-transform: uppercase; display: block;" href="">Logout</a></li>
+            <li id="blackScreen">
+             
+             <button type="button" class="btn text-black  position-relative" id="icon">
+               
+               <i class="fa-solid fa-cart-shopping fs-5" id="shop-item"></i>
+               <span class="position-absolute  translate-middle badge rounded-pill bg-danger "   style="top: 3px;" id="counter">
+               
+                
+               </span>
+             </button>
+
+            
+             <article class="carts-products">
+
+               <div class="carts-product">
+
+                 <div class="len" id="pro-s">
+
+                 </div>
+
+
+
+
+               </div>
+              <!-- <div class="pro-s">
+             <div class="image-s">
+               <img src="img/product/f1.jpg" alt="">
+               <p>Cotton Shirt</p>
+               
+             </div>
+             <div class="quantity-s">
+               <input type="number" name="" id="" value="1">
+               <p>Quantity</p>
+             </div>
+             <div class="price-s">$ 50</div>
+             <div class="icon-s">
+               <i class="fa-solid fa-trash"></i>
+             </div>
+            </div>  -->
+           
+            
+            
+            
+             <article  class="confirm-buy d-flex justify-content-around align-items-center " >
+               
+             <div class="tota">
+                 <p style="color: #1a1a1a;" class="fw-bold">Total</p >
+                 <p style="color: #1a1a1a;" id="totalPrice" class="fw-bold" id="totalPrice">0 $</p>
+             </div>
+             <button class="btn btn-success rounded-pill">Confirm Buying</button>
+             <a style="margin: 20px auto;" href="cart.html"  class="view btn btn-primary rounded-pill d-flex justify-content-center align-items-center ">View All Products</a>
+
+         </article> 
+             
+         
+              </article>  
+            
+            </li>
+           </div>
+           </ul>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+
+  <section id="shop-header" class="d-flex justify-content-center flex-column align-items-center text-center ">
+   
+    <h2 class="fw-bold fs-1 text-light">#StayHome</h2>
+   
+    <p class="text-light">Save more with coupons & up to 70% off!</p>
+   
+  </section>
+
+
+
+ <section id="featured-products " class="text-center section-p-1 section-m1">
+<h1> Products Created</h1>
+<p>Summer Collection New Modren Design</p>
+<div class="container  ">
+  <!-- <div class="d-flex justify-content-between align-items-center">
+    <input type="search" name="" id="search" placeholder="Search By Name">
+    <div class="selectfa">
+      <select name="" id="size-filter">
+        <option value="" hidden>Select Size</option>
+        <option value="All" >All </option>
+        <option value="Small">Small</option>
+        <option value="Medium">Medium</option>
+        <option value="Large">Large</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+    </div>
+  </div> -->
+  
+<div class="carts row text-center ms-auto me-auto mt-5 mb-5" id="cartsa" >
+ 
+ 
+
+
+  <!-- <div class="cards col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+    <img src="img/product/f1.jpg" class="card-img  img-fluid" alt="">
+    <div class="card-body">
+      <span>Adidas</span>
+      <h5 class="card-title">FACE PRINT TEXTURED SHIRT</h5>
+      <div class="stars">
+        <i class="fa-solid fa-star" ></i>
+        <i class="fa-solid fa-star" ></i>
+        <i class="fa-solid fa-star" ></i>
+        <i class="fa-solid fa-star" ></i>
+        
+        <i class="fa-regular fa-star"></i>
+      </div>
+      <div class="price">
+      <p class="p-price">$350 </p>
+      <button href="#" class="btn btn-primary added" id="addcart">Buy</button>
+      </div>
+      
+    </div>
+  </div>
+  <div class="cards col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+    <img src="img/product/f2.jpg" class="card-img" alt="">
+    <div class="card-body">
+      <span>Adidas</span>
+      <h5 class="card-title">FACE PRINT TEXTURED SHIRT</h5>
+      <div class="stars">
+        <i class="fa-solid fa-star" ></i>
+        <i class="fa-solid fa-star" ></i>
+        <i class="fa-solid fa-star" ></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+      <div class="price ">
+      <p class="p-price">$74 </p>
+      <button href="#" class="btn btn-primary " id="buy">Buy</button>
+      </div>
+      
+    </div>
+  </div>
+  <div class="cards col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+    <img src="img/product/f3.jpg" class="card-img-top img-fluid" alt="">
+    <div class="card-body">
+      <span>Adidas</span>
+      <h5 class="card-title ">STRIPED TEXTURED SHIRT</h5>
+      <div class="stars">
+        <i class="fa-solid fa-star" ></i>
+        <i class="fa-solid fa-star" ></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+      <div class="price-p ">
+      <p class="p-price">$111</p>
+      <button href="#" class="btn btn-primary">Buy</button>
+      </div>
+      
+    </div>
+  </div>
+  <div class="cards col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+    <img src="img/product/f4.jpg" class="card-img" alt="">
+    <div class="card-body">
+      <span>Adidas</span>
+      <h5 class="card-title ">EMBROIDERED SHIRT</h5>
+      <div class="stars">
+        <i class="fa-solid fa-star" ></i>
+        <i class="fa-solid fa-star" ></i>
+        <i class="fa-solid fa-star" ></i>
+        <i class="fa-solid fa-star" ></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+      <div class="price  price-p">
+      <p class="p-price">$350 </p>
+      <button href="#" class="btn btn-primary">Buy</button>
+      </div>
+      
+    </div>
+  </div>
+  <div class="cards col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+    <img src="img/product/f5.jpg" class="card-img" alt="">
+    <div class="card-body">
+      <span>Adidas</span>
+      <h5 class="card-title ">ABSTRACT PRINT SHIRT</h5>
+      <div class="stars">
+        <i class="fa-solid fa-star" ></i>
+        <i class="fa-solid fa-star" ></i>
+        
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+      <div class="price ">
+      <p class="p-price">$150 </p>
+      <button href="#" class="btn btn-primary">Buy</button>
+      </div>
+      
+    </div>
+  </div>
+  <div class="cards col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+    <img src="img/product/f6.jpg" class="card-img" alt="">
+    <div class="card-body">
+      <span>Adidas</span>
+      <h5 class="card-title ">COTTON - LINEN SHIRT</h5>
+      <div class="stars">
+        <i class="fa-solid fa-star" ></i>
+        <i class="fa-solid fa-star" ></i>
+        <i class="fa-solid fa-star" ></i>
+        <i class="fa-solid fa-star" ></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+      <div class="price ">
+      <p class="p-price">$50 </p>
+      <button href="#" class="btn btn-primary">Buy</button>
+      </div>
+      
+    </div>
+  </div>
+  <div class="cards col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+    <img src="img/product/f7.jpg" class="card-img" alt="">
+    <div class="card-body">
+      <span>Adidas</span>
+      <h5 class="card-title ">Cotton Beige Trousers</h5>
+      <div class="stars">
+        <i class="fa-solid fa-star" ></i>
+        <i class="fa-solid fa-star" ></i>
+        <i class="fa-solid fa-star" ></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+      <div class="price ">
+      <p class="p-price">$300 </p>
+      <button href="#" class="btn btn-primary">Buy</button>
+      </div>
+      
+    </div>
+  </div>
+  <div class="cards col-sm-6 col-md-4 col-lg-3" style="width: 18rem;">
+    <img src="img/product/f8.jpg" class="card-img" alt="">
+    <div class="card-body">
+      <span>Adidas</span>
+      <h5 class="card-title ">Cotton Women Blouse</h5>
+      <div class="stars">
+        <i class="fa-solid fa-star" ></i>
+        <i class="fa-solid fa-star" ></i>
+        
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+      </div>
+      <div class="price ">
+      <p class="p-price">$135 </p>
+      <button href="#" class="btn btn-primary">Buy</button>
+      </div>
+      
+    </div>
+  </div>
+</div> -->
+
+</div>
+<a href="createproduct.html" class="create-products-icon" id="plus" style="display: none;">
+  <i class="fa-solid fa-plus"></i>
+</a>
+
+ </section>
+
+
+
+
+
+   <section id="newletters" class="section-p1 " >
+<div class="container ">
+ <div class="row align-items-center  ">
+  <div class="new col-lg-6 col-md-12 col-sm-12">
+    <h4>Sign Up For Newletters</h4>
+    <p> Get E-mail Updates about our lastees shop and <span>special offers</span></p>
+  </div>
+  <div class="form col-lg-6 col-md-12 col-sm-12">
+    <input type="email" name="" id="" placeholder="Enter You E-mail">
+    <button class="btn ">Sign Up</button>
+  </div>
+ </div>
+</div>
+   </section>
+
+
+   <!-- Footer -->
+   <footer class="text-center text-lg-start  text-muted  section-p1">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3 text-secondary"></i><img src="img/logo.png" alt="">
+          </h6>
+          <p>
+            Kara Company is a company for the manufacture and sale of clothes of the highest quality in the world.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Shirts</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">T-Shirts</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Cargo</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Bermuda</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Shop</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">About</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Blogs</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Contact</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3 text-secondary"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4 w-100 ">
+    © 2024 Copyright
+                            <a class="text-reset fw-bold" href="">Cara.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+ <script src="js/data.js"></script> 
+ <script src="js/user.js"></script>
+ <!-- <script src="js/const.js"></script>  -->
+  <!-- <script  src="main.js"></script> -->
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="js/myproducts.js"></script>
+  <!-- <script src="js/data.js"></script>  -->
+   <!-- <script src="js/cart.js"></script>  -->
+ <!-- <script src="js/createproduct.js"></script>  -->
+
+
+</body>
+</html>  
